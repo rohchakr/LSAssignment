@@ -9,12 +9,15 @@
 `NOTE: Please use git bash or other bash executable terminal emulator for Windows OS`
 
 Input :- stdin
+
 Output :- stdout
 
 ### Input Format:
 
 First line: Single integer `r` representing Number of Players
+
 Second line: Single integer `c` representing Number of Attributes (Player features)
+
 Next `r` lines: Space Separated `c` values - `String name`, `float height`, `float BMI`, `int scores`, `int defends` 
 
 Players are always sorted by their names.
@@ -22,6 +25,7 @@ Players are always sorted by their names.
 ### Output:
 
 Print `r` lines
+
 `name`, `SELECT/REJECT`, `DEFENDER/STRIKER/NA`
 
 ### Rules:
@@ -40,8 +44,11 @@ Print `r` lines
 ### File Structure:
 
 `Player.java` - Contains player features
+
 `TeamSelection.java` - Evaluates players based on the rules
+
 `Main.java` - Driver to call TeamSelection
+
 `run.sh` - Executable
 
 ### Approach:
@@ -54,7 +61,11 @@ Print `r` lines
 ### Challenges:
 
 1. Pick best player
+
 Use Treemap {key: scores/defends, value: players}
+
 2. Multiple players having same scores/defences
+
 Use Treemap {key: scores/defends, value: player list}
+
 3. Same player eligible for both striker and defender
