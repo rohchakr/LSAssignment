@@ -69,3 +69,23 @@ Use Treemap {key: scores/defends, value: players}
 Use Treemap {key: scores/defends, value: player list}
 
 3. Same player eligible for both striker and defender
+
+### Sample Input:
+
+```
+4
+5
+Boateng 6.1 22 24 45
+Kaka 6 22 1 1
+Ronaldo 5.8 21 120 0
+Suarez 5.9 20 100 1
+```
+
+### Sample Output:
+
+```
+Boateng SELECT DEFENDER
+Kaka REJECT NA
+Ronaldo SELECT STRIKER
+Suarez REJECT NA
+```
